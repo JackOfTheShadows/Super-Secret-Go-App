@@ -48,13 +48,13 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.home_about:
-                Log.i("my", "home");
+                MainActivity.start(this);;
                 return true;
             case R.id.neuer_termin_about:
-                Log.i("my", "termint");
+                TerminActivity.start(this);
                 return true;
             case R.id.groups_about:
-                Log.i("my", "groups");
+                GroupsActivity.start(this);
                 return true;
             case R.id.settings_about:
                 SettingsActivity.start(this);

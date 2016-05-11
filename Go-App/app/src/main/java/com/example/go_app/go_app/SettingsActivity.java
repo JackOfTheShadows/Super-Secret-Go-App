@@ -48,13 +48,13 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.home_settings:
-                Log.i("my", "home");
+                MainActivity.start(this);
                 return true;
             case R.id.neuer_termin_settings:
-                Log.i("my", "termint");
+                TerminActivity.start(this);
                 return true;
             case R.id.groups_settings:
-                Log.i("my", "groups");
+                GroupsActivity.start(this);
                 return true;
             case R.id.about_settings:
                 AboutActivity.start(this);
