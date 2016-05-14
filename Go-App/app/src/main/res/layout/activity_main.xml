@@ -47,10 +47,11 @@
         android:id="@+id/textView_heute"
         android:layout_below="@+id/view"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="12:00 \n Mensa"
         android:textSize="22dp"
@@ -60,6 +61,7 @@
         android:paddingStart="15dp"
         android:layout_below="@+id/textView_heute"
         android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
         android:layout_toStartOf="@+id/imageButton2"
         android:layout_alignParentEnd="true" />
 
@@ -68,22 +70,25 @@
         android:layout_height="50dp"
         android:id="@+id/imageButton"
         android:src="@drawable/cancel"
-        android:layout_below="@+id/textView_heute"
+        android:layout_above="@+id/textView2"
         android:layout_alignParentEnd="true"
-        android:background="@null"/>
+        android:background="@null"
+        android:layout_marginTop="8dp"
+        />
+
 
     <ImageButton
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/imageButton2"
-        android:layout_below="@+id/textView_heute"
-        android:layout_toStartOf="@+id/imageButton"
         android:src="@drawable/checked"
         android:background="@null"
-        />
+        android:layout_above="@+id/textView2"
+        android:layout_toStartOf="@+id/imageButton3"
+        android:layout_marginRight="12dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="22:00 \n Agostea"
         android:textSize="22dp"
@@ -91,29 +96,30 @@
         android:paddingStart="15dp"
         android:layout_below="@+id/button_mensa"
         android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
         android:background="#ffffff"
         android:layout_toStartOf="@+id/imageButton3"
-        android:layout_alignEnd="@+id/menu_termine" />
+        android:layout_alignParentEnd="true"
+        />
 
     <ImageButton
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/imageButton3"
         android:src="@drawable/manager"
-        android:layout_below="@+id/button_mensa"
-        android:layout_alignParentEnd="true"
         android:background="@null"
-        />
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/imageButton4"
-        android:layout_alignBottom="@+id/imageButton3"
-        android:layout_toStartOf="@+id/menu_termine"
         android:src="@drawable/somemap"
         android:background="@null"
-        android:layout_marginRight="12dp"/>
+        android:layout_marginRight="12dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toStartOf="@+id/imageButton3" />
 
 
 </RelativeLayout>

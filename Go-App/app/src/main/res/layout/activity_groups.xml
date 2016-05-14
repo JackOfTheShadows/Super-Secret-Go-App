@@ -19,6 +19,7 @@
         android:id="@+id/textView_groups" />
 
     <View
+        android:id="@+id/gruenerStrich"
         android:layout_width="match_parent"
         android:layout_height="8dp"
         android:background="#387D1A"
@@ -35,5 +36,66 @@
         android:layout_marginRight="10dp"
         android:src="@drawable/menu_button"
         android:background="@null"/>
+
+
+
+    <TextView
+        android:id="@+id/gruppePSE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PSEGruppe"
+        android:textSize="22dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/gruenerStrich"
+        android:paddingStart="25dp"
+        android:padding="10dp"
+        android:background="#ffff" />
+
+    <ImageButton
+        android:id="@+id/gruppen_infoButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/manager"
+        android:background="@null"
+        android:layout_alignTop="@+id/gruppePSE"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/gruppeKommilitonen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kommilitonen"
+        android:textSize="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/gruppePSE"
+        android:paddingStart="60dp"
+        android:padding="10dp"
+        android:background="#ffff" />
+
+    <TextView
+        android:id="@+id/lernGruppe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lern Gruppe"
+        android:textSize="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/gruppeKommilitonen"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="#ffff" />
+
+    <ImageButton
+        android:id="@+id/gruppe_erstellen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gruppenplus"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
