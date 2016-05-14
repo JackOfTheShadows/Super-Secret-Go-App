@@ -24,7 +24,8 @@
         android:layout_height="8dp"
         android:background="#387D1A"
         android:layout_below="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:layout_alignEnd="@+id/textView"
+        android:id="@+id/view" />
     >
 
     <ImageButton
@@ -36,5 +37,83 @@
         android:layout_marginRight="10dp"
         android:src="@drawable/menu_button"
         android:background="@null"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heute:"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:id="@+id/textView_heute"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00 \n Mensa"
+        android:textSize="22dp"
+        android:id="@+id/button_mensa"
+        android:background="#ffffff"
+        android:textAlignment="textStart"
+        android:paddingStart="15dp"
+        android:layout_below="@+id/textView_heute"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/cancel"
+        android:layout_below="@+id/textView_heute"
+        android:layout_alignParentEnd="true"
+        android:background="@null"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton2"
+        android:layout_below="@+id/textView_heute"
+        android:layout_toStartOf="@+id/imageButton"
+        android:src="@drawable/checked"
+        android:background="@null"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22:00 \n Agostea"
+        android:textSize="22dp"
+        android:id="@+id/textView2"
+        android:paddingStart="15dp"
+        android:layout_below="@+id/button_mensa"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:layout_toStartOf="@+id/imageButton3"
+        android:layout_alignEnd="@+id/menu_termine" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton3"
+        android:src="@drawable/manager"
+        android:layout_below="@+id/button_mensa"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton4"
+        android:layout_alignBottom="@+id/imageButton3"
+        android:layout_toStartOf="@+id/menu_termine"
+        android:src="@drawable/somemap"
+        android:background="@null"
+        android:layout_marginRight="12dp"/>
+
 
 </RelativeLayout>
