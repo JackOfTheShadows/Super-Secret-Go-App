@@ -20,6 +20,7 @@
         android:id="@+id/textView_termin" />
 
     <View
+        android:id="@+id/gruenerStrich"
         android:layout_width="match_parent"
         android:layout_height="8dp"
         android:background="#387D1A"
@@ -36,5 +37,173 @@
         android:layout_marginRight="10dp"
         android:src="@drawable/menu_button"
         android:background="@null"/>
+
+    <TextView
+        android:id="@+id/textGruppe"
+        android:text="Gruppe:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gruenerStrich"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinnerGruppe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textTerminName"
+        android:layout_alignBaseline="@+id/textGruppe"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:popupBackground="#ffff"
+        android:backgroundTint="#ffff"
+        >
+
+    </Spinner>
+
+            <TextView
+                android:id="@+id/textTerminName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terminname:"
+                android:layout_below="@+id/textGruppe"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:textSize="20dp"
+            />
+
+
+
+            <AutoCompleteTextView
+                android:id="@+id/tipTerminName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/textTerminName"
+                android:background="#ffff"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_alignBottom="@+id/textTerminName"
+                />
+
+    <TextView
+        android:id="@+id/textDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTerminName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Datum:"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/buttonDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heute"
+        android:textSize="20dp"
+        android:backgroundTint="#ffff"
+        android:layout_alignBaseline="@+id/textDatum"
+        android:layout_toEndOf="@+id/textTerminName" />
+    //TODO: ein Richtigen DatePicker erstellen.
+
+    <TextView
+        android:id="@+id/textVeranstaltung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veranstaltung"
+        android:textSize="20dp"
+        android:layout_below="@+id/textDatum"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <RadioButton
+        android:id="@+id/buttonVeranstaltung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textVeranstaltung"
+        android:layout_alignTop="@+id/textVeranstaltung"
+        android:layout_alignBottom="@+id/textVeranstaltung"
+        />
+
+    <TextView
+        android:id="@+id/textTour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tour"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/textVeranstaltung"
+        android:layout_marginLeft="60dp"
+        android:layout_alignTop="@+id/textVeranstaltung"
+        android:layout_alignBottom="@+id/textVeranstaltung"
+        />
+
+    <RadioButton
+        android:id="@+id/TourButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textTour"
+        android:layout_alignTop="@+id/textTour"
+        android:layout_alignBottom="@+id/textTour"
+        />
+
+    <TextView
+        android:id="@+id/textOrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ort:"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/textVeranstaltung"
+        android:layout_alignTop="@+id/imageOrt"
+        android:layout_alignBottom="@+id/imageOrt"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageButton
+        android:id="@+id/imageOrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ort"
+        android:adjustViewBounds="true"
+        android:maxHeight="180dp"
+        android:maxWidth="180dp"
+        android:layout_alignStart="@+id/tipTerminName"
+        android:layout_below="@id/textVeranstaltung"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textNotiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notiz:"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/tipNotiz"
+        android:layout_alignStart="@+id/textGruppe"
+    />
+
+    <AutoCompleteTextView
+        android:id="@+id/tipNotiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/imageOrt"
+        android:layout_alignEnd="@+id/tipTerminName"
+        android:background="#ffff"
+        android:layout_below="@+id/imageOrt"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="start"
+        />
+
+
+
 
 </RelativeLayout>
