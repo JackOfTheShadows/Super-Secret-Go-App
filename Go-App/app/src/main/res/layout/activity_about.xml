@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ededed"
     tools:context="com.example.go_app.go_app.AboutActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#C0C0C0"
+        android:background="#ededed"
         android:fontFamily="sans-serif-light"
         android:padding="10dp"
         android:text="About"

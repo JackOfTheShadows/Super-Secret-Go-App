@@ -64,3 +64,4 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 }
+//TODO: Navigation->"home" home ist klein geschrieben.

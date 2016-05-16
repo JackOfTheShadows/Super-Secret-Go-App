@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ededed"
     tools:context=".GroupsActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#C0C0C0"
+        android:background="#ededed"
         android:fontFamily="sans-serif-light"
         android:padding="10dp"
         android:text="Gruppen"
@@ -49,16 +50,9 @@
         android:layout_below="@+id/gruenerStrich"
         android:paddingStart="25dp"
         android:padding="10dp"
-        android:background="#ffff" />
+        android:background="#ffff"
+        android:gravity="center_horizontal"/>
 
-    <ImageButton
-        android:id="@+id/gruppen_infoButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/manager"
-        android:background="@null"
-        android:layout_alignTop="@+id/gruppePSE"
-        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/gruppeKommilitonen"
@@ -68,7 +62,7 @@
         android:textSize="22dp"
         android:layout_marginTop="12dp"
         android:layout_below="@+id/gruppePSE"
-        android:paddingStart="60dp"
+        android:gravity="center_horizontal"
         android:padding="10dp"
         android:background="#ffff" />
 
@@ -89,13 +83,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:maxHeight="50dp"
-        android:maxWidth="50dp"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
         android:scaleType="fitCenter"
         android:src="@drawable/gruppenplus"
         android:background="@null"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"/>
 
 
 </RelativeLayout>
