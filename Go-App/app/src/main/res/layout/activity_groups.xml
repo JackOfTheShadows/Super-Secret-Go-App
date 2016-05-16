@@ -44,7 +44,7 @@
         android:id="@+id/gruppePSE"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PSEGruppe"
+        android:text="PSE Gruppe"
         android:textSize="22dp"
         android:layout_marginTop="30dp"
         android:layout_below="@+id/gruenerStrich"

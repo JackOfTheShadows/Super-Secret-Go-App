@@ -9,11 +9,16 @@ import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 
 public class TerminActivity extends AppCompatActivity implements View.OnClickListener, PopupMenu.OnMenuItemClickListener {
 
     ImageButton menu_button;
+    Spinner spinnerGruppe;
+    String[] auswahlGruppen = {"PSE Gruppe", "Kommilitionen", "Lern Gruppe"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +26,20 @@ public class TerminActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_termin);
         menu_button = (ImageButton) findViewById(R.id.menu_termine_termin);
         menu_button.setOnClickListener(this);
+
+
+        spinnerGruppe = (Spinner) findViewById(R.id.spinnerGruppe);
+        ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String> (TerminActivity.this, android.R.layout.simple_spinner_dropdown_item, auswahlGruppen);
+        spinnerGruppe.setAdapter(spinnerAdapter);
+        spinnerGruppe.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+
     }
 
     public static void start(Activity activity) {
@@ -62,4 +81,6 @@ public class TerminActivity extends AppCompatActivity implements View.OnClickLis
                 return false;
         }
     }
+
+
 }
