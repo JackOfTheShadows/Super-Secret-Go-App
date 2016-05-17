@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 
 public class TerminActivity extends AppCompatActivity implements View.OnClickListener, PopupMenu.OnMenuItemClickListener {
@@ -19,6 +20,7 @@ public class TerminActivity extends AppCompatActivity implements View.OnClickLis
     ImageButton menu_button;
     Spinner spinnerGruppe;
     String[] auswahlGruppen = {"PSE Gruppe", "Kommilitionen", "Lern Gruppe"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
