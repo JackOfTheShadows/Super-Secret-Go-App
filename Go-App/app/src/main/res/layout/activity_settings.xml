@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#ededed"
     tools:context="com.example.go_app.go_app.SettingsActivity">
 
@@ -24,7 +25,8 @@
         android:layout_height="8dp"
         android:background="#387D1A"
         android:layout_below="@+id/textView_settings"
-        android:layout_alignEnd="@+id/textView_settings" />
+        android:layout_alignEnd="@+id/textView_settings"
+        android:id="@+id/gruenerStrich" />
     >
 
     <ImageButton
@@ -36,5 +38,39 @@
         android:layout_marginRight="10dp"
         android:src="@drawable/menu_button"
         android:background="@null"/>
+
+    <Switch
+        android:id="@+id/switchStandort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Standort anzeigen"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/gruenerStrich"
+        android:thumbTint="#387D1A"
+        android:checked="true" />
+
+    <Switch
+        android:id="@+id/switchBenachrichtung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benachrichtigungen"
+        android:textSize="20dp"
+        android:thumbTint="#387D1A"
+        android:layout_below="@+id/switchStandort"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@+id/switchStandort"
+        android:layout_alignEnd="@+id/switchStandort"
+        android:checked="true" />
+
+    <ZoomButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zoomButton"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
 
 </RelativeLayout>

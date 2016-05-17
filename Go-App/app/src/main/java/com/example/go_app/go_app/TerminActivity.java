@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.Spinner;
@@ -81,6 +82,19 @@ public class TerminActivity extends AppCompatActivity implements View.OnClickLis
                 return true;
             default:
                 return false;
+        }
+    }
+
+    // TODO: methode terminType schreiben. Man darf nur Veranstaltung oder Tour "checken" (ausgewählt sein)
+
+    public void terminType (View view) {
+        if (view.getId() == findViewById(R.id.buttonVeranstaltung).getId()) {
+            // checked von TourButton entfernen und buttonVeranstaltung Zustand als checked setzen.
+        }
+        else {
+            if (view.getId() == findViewById(R.id.TourButton).getId()) {
+                // checked von buttonVeranstaltung entfernen und TourButton Zustand als checked  setzen
+            }
         }
     }
 

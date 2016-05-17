@@ -176,7 +176,8 @@
         android:layout_alignStart="@+id/spinnerGruppe"
         android:layout_alignTop="@+id/textVeranstaltung"
         android:layout_alignBottom="@+id/textVeranstaltung"
-        />
+        android:buttonTint="#387D1A"
+        android:checked="true" />
 
     <TextView
         android:id="@+id/textTour"
@@ -194,6 +195,7 @@
         android:id="@+id/TourButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#387D1A"
         android:layout_toRightOf="@+id/textTour"
         android:layout_alignTop="@+id/textTour"
         android:layout_alignBottom="@+id/textTour"
@@ -224,7 +226,7 @@
         android:maxWidth="150dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textDauer"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         />
 
     <TextView
@@ -240,14 +242,25 @@
     <AutoCompleteTextView
         android:id="@+id/tipNotiz"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageOrt"
         android:layout_alignEnd="@+id/tipTerminName"
         android:background="#ffff"
         android:layout_below="@+id/imageOrt"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="60dp"
         android:gravity="start"
+        />
+
+    <Button
+        android:id="@+id/buttonErstellen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Erstellen"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
         />
 
 
