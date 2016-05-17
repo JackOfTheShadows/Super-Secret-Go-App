@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_map"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/neuer_termin_map"
+        android:title="Neuer Termin"
+        />
+
+    <item
+        android:id="@+id/groups_map"
+        android:title="Gruppen"
+        />
+
+    <item
+        android:id="@+id/settings_map"
+        android:title="Einstellungen"
+        />
+
+    <item
+        android:id="@+id/about_map"
+        android:title="About"
+        />
+
+</menu>

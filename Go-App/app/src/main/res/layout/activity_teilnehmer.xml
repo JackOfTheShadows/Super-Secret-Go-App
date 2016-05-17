@@ -22,8 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="8dp"
         android:background="#387D1A"
-        android:layout_below="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/textView_teilnehmer"
+        android:layout_alignEnd="@+id/textView_teilnehmer"
         android:id="@+id/view_teilnehmer" />
     >
 

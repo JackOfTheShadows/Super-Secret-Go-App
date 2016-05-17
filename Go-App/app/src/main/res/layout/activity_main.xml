@@ -113,13 +113,13 @@
         android:layout_marginTop="8dp"
         android:src="@drawable/teilnehmer"
         android:background="@null"
-        android:layout_alignTop="@+id/imageButton4"
+        android:layout_alignTop="@+id/map"
         android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/imageButton4"
+        android:id="@+id/map"
         android:src="@drawable/somemap"
         android:background="@null"
         android:layout_marginRight="12dp"

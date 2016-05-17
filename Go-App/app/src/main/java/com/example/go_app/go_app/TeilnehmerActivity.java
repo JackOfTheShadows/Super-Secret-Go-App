@@ -46,7 +46,7 @@ public class TeilnehmerActivity extends AppCompatActivity implements View.OnClic
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.home_teilnehmer:
-                TeilnehmerActivity.start(this);
+                MainActivity.start(this);
                 return true;
             case R.id.neuer_termin_teilnehmer:
                 TerminActivity.start(this);
