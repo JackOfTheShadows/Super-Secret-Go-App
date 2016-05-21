@@ -6,6 +6,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Testing \n something \n new"
+        android:text="Heute 22 Uhr \n Agostea \n Rüppurrer Str. 1 \n Notiz: Halloween theme "
         android:id="@+id/textView6" />
 </LinearLayout>

@@ -54,17 +54,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#ffff"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_below="@id/view_map"
-        android:hint="Suchen"
-        android:textSize="20dp"
-        android:paddingLeft="15dp"
-        />
+
 
 </RelativeLayout>

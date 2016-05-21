@@ -5,67 +5,65 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.PopupMenu;
-import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
-public class GroupsActivity extends AppCompatActivity implements View.OnClickListener, PopupMenu.OnMenuItemClickListener {
+public class GroupSetActivity extends AppCompatActivity implements View.OnClickListener, PopupMenu.OnMenuItemClickListener{
+
 
     ImageButton menu_button;
-    TextView group;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_groups);
-        menu_button = (ImageButton) findViewById(R.id.menu_termine_groups);
+        setContentView(R.layout.activity_group_set);
+        menu_button = (ImageButton) findViewById(R.id.menu_teilnehmer);
         menu_button.setOnClickListener(this);
-        group = (TextView) findViewById(R.id.gruppePSE);
-        group.setOnClickListener(this);
     }
 
     public static void start(Activity activity) {
-        Intent intent = new Intent(activity, GroupsActivity.class);
+        Intent intent = new Intent(activity, GroupSetActivity.class);
         activity.startActivity(intent);
     }
 
     public void showPopUp(View v) {
         PopupMenu popup = new PopupMenu(this, v);
-        popup.setOnMenuItemClickListener(GroupsActivity.this);
+        popup.setOnMenuItemClickListener(GroupSetActivity.this);
         MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.menu_groups, popup.getMenu());
+        inflater.inflate(R.menu.menu_teilnehmer, popup.getMenu());
         popup.show();
     }
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.menu_termine_groups) {
+        if (v.getId() == R.id.menu_teilnehmer) {
             showPopUp(v);
-        } else if(v.getId() == R.id.gruppePSE){
-            GroupSetActivity.start(this);
         }
     }
 
     @Override
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.home_groups:
+            case R.id.home_teilnehmer:
                 MainActivity.start(this);
                 return true;
-            case R.id.neuer_termin_groups:
+            case R.id.neuer_termin_teilnehmer:
                 TerminActivity.start(this);
                 return true;
-            case R.id.settings_groups:
+            case R.id.groups_teilnehmer:
+                GroupsActivity.start(this);
+                return true;
+            case R.id.settings_teilnehmer:
                 SettingsActivity.start(this);
                 return true;
-            case R.id.about_groups:
+            case R.id.about_teilnehmer:
                 AboutActivity.start(this);
                 return true;
             default:
                 return false;
         }
     }
+
 }

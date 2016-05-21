@@ -142,7 +142,6 @@
         android:layout_marginLeft="3dp"
         android:textSize="18dp"
         android:id="@+id/textView6" />
-
 <Button
     android:id="@+id/buttonDatePicker"
     android:layout_width="wrap_content"
@@ -224,10 +223,8 @@
         android:adjustViewBounds="true"
         android:maxHeight="150dp"
         android:maxWidth="150dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/textDauer"
-        android:layout_marginTop="8dp"
-        />
+        android:layout_toEndOf="@+id/textVeranstaltung"
+        android:layout_below="@+id/textView7" />
 
     <TextView
         android:id="@+id/textNotiz"
@@ -262,6 +259,18 @@
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="8dp"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lärchenallee"
+        android:textSize="17sp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        android:id="@+id/textView7"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/imageOrt"
+        android:layout_alignEnd="@+id/TourButton" />
 
 
 </RelativeLayout>

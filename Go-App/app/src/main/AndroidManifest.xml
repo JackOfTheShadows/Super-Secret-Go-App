@@ -23,7 +23,8 @@
         <activity android:name=".GroupsActivity" />
         <activity android:name=".TerminActivity" />
         <activity android:name=".TeilnehmerActivity" />
-        <activity android:name=".MapActivity"></activity>
+        <activity android:name=".MapActivity" />
+        <activity android:name=".GroupSetActivity"></activity>
     </application>
 
 </manifest>
