@@ -5,7 +5,59 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Heute 22 Uhr \n Agostea \n Rüppurrer Str. 1 \n Notiz: Halloween theme "
-        android:id="@+id/textView6" />
+        android:layout_height="wrap_content"
+        android:background="#ededed"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
+        android:text="Group Info"
+        android:textColor="#387D1A"
+        android:textSize="25sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView_teilnehmer" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#387D1A"
+        android:layout_below="@+id/textView_teilnehmer"
+        android:layout_alignEnd="@+id/textView_teilnehmer"
+        android:id="@+id/view_teilnehmer" />
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Heute 22 Uhr"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/textView8" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Agostea"
+        android:paddingLeft="10dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rüppurrer Str. 1"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/textView10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Notiz: Halloween theme"
+        android:paddingLeft="10dp"
+        android:id="@+id/textView11" />
+
 </LinearLayout>

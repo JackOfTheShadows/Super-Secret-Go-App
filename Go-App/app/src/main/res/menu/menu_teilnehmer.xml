@@ -23,7 +23,7 @@
 
     <item
         android:id="@+id/about_teilnehmer"
-        android:title="About"
+        android:title="Über Uns"
         />
 
 </menu>

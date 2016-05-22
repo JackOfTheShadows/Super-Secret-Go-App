@@ -12,7 +12,7 @@
         android:background="#ededed"
         android:fontFamily="sans-serif-light"
         android:padding="10dp"
-        android:text="About"
+        android:text="Über Uns"
         android:textColor="#387D1A"
         android:textSize="25sp"
         android:layout_alignParentStart="true"

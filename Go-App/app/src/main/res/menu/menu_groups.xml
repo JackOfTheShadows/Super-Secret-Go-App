@@ -18,7 +18,7 @@
 
     <item
         android:id="@+id/about_groups"
-        android:title="About"
+        android:title="Über Uns"
         />
 
 </menu>

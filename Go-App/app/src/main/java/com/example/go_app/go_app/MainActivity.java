@@ -60,8 +60,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (v.getId() == R.id.map) {
             MapActivity.start(this);
         }else if (v.getId() == R.id.textView2){
-            Toast.makeText(this, "works",
-                    Toast.LENGTH_LONG).show();
             // get prompts.xml view
             LayoutInflater layoutInflater = LayoutInflater.from(MainActivity.this);
             View promptView = layoutInflater.inflate(R.layout.information_apoitment, null);
