@@ -147,12 +147,11 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textSize="18dp"
-    android:hint="Heute"
     android:background="#ffff"
     android:layout_alignStart="@+id/tipTerminName"
     android:layout_alignTop="@+id/textDatum"
     android:layout_alignBottom="@+id/textDatum"
-    android:layout_alignEnd="@+id/textStunde"
+    android:layout_alignEnd="@+id/tipTerminName"
      />
 
 
@@ -261,7 +260,6 @@
     <AutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mensa am Adenauerring"
         android:textSize="18dp"
         android:background="#ffffff"
         android:id="@+id/tipOrt"
