@@ -9,11 +9,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class GroupSetActivity extends AppCompatActivity implements View.OnClickListener, PopupMenu.OnMenuItemClickListener{
 
-
     ImageButton menu_button;
+    public static String parameter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +22,13 @@ public class GroupSetActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_group_set);
         menu_button = (ImageButton) findViewById(R.id.menu_teilnehmer);
         menu_button.setOnClickListener(this);
+        Toast.makeText(GroupSetActivity.this, parameter, Toast.LENGTH_SHORT).show();
     }
 
-    public static void start(Activity activity) {
+    public static void start(Activity activity, String name) {
         Intent intent = new Intent(activity, GroupSetActivity.class);
         activity.startActivity(intent);
+        parameter = name;
     }
 
     public void showPopUp(View v) {

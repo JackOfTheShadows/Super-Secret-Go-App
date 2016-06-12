@@ -39,45 +39,6 @@
         android:background="@null"/>
 
 
-
-    <TextView
-        android:id="@+id/gruppePSE"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PSE Gruppe"
-        android:textSize="22dp"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/gruenerStrich"
-        android:paddingStart="25dp"
-        android:padding="10dp"
-        android:background="#ffff"
-        android:gravity="center_horizontal"/>
-
-
-    <TextView
-        android:id="@+id/gruppeKommilitonen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Kommilitonen"
-        android:textSize="22dp"
-        android:layout_marginTop="12dp"
-        android:layout_below="@+id/gruppePSE"
-        android:gravity="center_horizontal"
-        android:padding="10dp"
-        android:background="#ffff" />
-
-    <TextView
-        android:id="@+id/lernGruppe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lern Gruppe"
-        android:textSize="22dp"
-        android:layout_marginTop="12dp"
-        android:layout_below="@+id/gruppeKommilitonen"
-        android:gravity="center_horizontal"
-        android:padding="10dp"
-        android:background="#ffff" />
-
     <ImageButton
         android:id="@+id/gruppe_erstellen"
         android:layout_width="wrap_content"
@@ -91,6 +52,14 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="13dp"/>
+
+    <ListView
+        android:id="@+id/groupsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gruppe_erstellen"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gruenerStrich" />
 
 
 </RelativeLayout>
