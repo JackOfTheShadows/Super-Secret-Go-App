@@ -190,7 +190,7 @@
         />
 
     <RadioButton
-        android:id="@+id/TourButton"
+        android:id="@+id/buttonTour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:buttonTint="#387D1A"

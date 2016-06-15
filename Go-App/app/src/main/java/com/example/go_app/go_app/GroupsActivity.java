@@ -24,6 +24,7 @@ public class GroupsActivity extends AppCompatActivity implements View.OnClickLis
 
     private List<Group> groups = new ArrayList<Group>();
     ImageButton menu_button;
+    ImageButton buttonCreateGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,9 @@ public class GroupsActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_groups);
         menu_button = (ImageButton) findViewById(R.id.menu_termine_groups);
         menu_button.setOnClickListener(this);
+
+        buttonCreateGroup = (ImageButton) findViewById(R.id.createGroup);
+        buttonCreateGroup.setOnClickListener(this);
         populateGroups();
         populateListView();
         registerClickCallback();
@@ -66,6 +70,9 @@ public class GroupsActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         if (v.getId() == R.id.menu_termine_groups) {
             showPopUp(v);
+        }
+        if (v.getId() == R.id.createGroup) {
+            CreateNewGroupActivity.start(this);
         }
     }
 

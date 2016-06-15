@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         activity.startActivity(intent);
     }
 
-    public void showPopUp(View v) {
+    private void showPopUp(View v) {
         PopupMenu popup = new PopupMenu(this, v);
         popup.setOnMenuItemClickListener(MainActivity.this);
         MenuInflater inflater = popup.getMenuInflater();

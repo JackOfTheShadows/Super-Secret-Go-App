@@ -19,6 +19,8 @@ import android.widget.Spinner;
 public class TerminActivity extends AppCompatActivity implements View.OnClickListener, PopupMenu.OnMenuItemClickListener {
 
     ImageButton menu_button;
+    RadioButton radioButtonEvent;
+    RadioButton radioButtonTour;
     Spinner spinnerGruppe;
     String[] auswahlGruppen = {"PSE Gruppe", "Kommilitionen", "Lern Gruppe"};
 
@@ -29,7 +31,8 @@ public class TerminActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_termin);
         menu_button = (ImageButton) findViewById(R.id.menu_termine_termin);
         menu_button.setOnClickListener(this);
-
+        radioButtonEvent = (RadioButton) findViewById(R.id.buttonVeranstaltung);
+        radioButtonTour = (RadioButton) findViewById(R.id.buttonTour);
 
         spinnerGruppe = (Spinner) findViewById(R.id.spinnerGruppe);
         ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String> (TerminActivity.this, android.R.layout.simple_spinner_dropdown_item, auswahlGruppen);
@@ -63,6 +66,10 @@ public class TerminActivity extends AppCompatActivity implements View.OnClickLis
         if (v.getId() == R.id.menu_termine_termin) {
             showPopUp(v);
         }
+        if (v.getId() == R.id.buttonVeranstaltung || v.getId() == R.id.buttonTour) {
+            terminType(v);
+        }
+
     }
 
     @Override
@@ -90,10 +97,16 @@ public class TerminActivity extends AppCompatActivity implements View.OnClickLis
     public void terminType (View view) {
         if (view.getId() == findViewById(R.id.buttonVeranstaltung).getId()) {
             // checked von TourButton entfernen und buttonVeranstaltung Zustand als checked setzen.
+            // radioButtonEvent.setClickDIngs
+            // radioButtonTour.removeClickdings
+
         }
         else {
-            if (view.getId() == findViewById(R.id.TourButton).getId()) {
+            if (view.getId() == findViewById(R.id.buttonTour).getId()) {
                 // checked von buttonVeranstaltung entfernen und TourButton Zustand als checked  setzen
+                // radioButtonTour.setClickdings
+                // radioButtonEvent.removeClickDIngs
+
             }
         }
     }

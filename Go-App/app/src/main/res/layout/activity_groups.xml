@@ -40,7 +40,7 @@
 
 
     <ImageButton
-        android:id="@+id/gruppe_erstellen"
+        android:id="@+id/createGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
