@@ -21,7 +21,7 @@ public class AlarmReceiver  extends BroadcastReceiver {
         /*Put extra in the intent ?
         serviceIntent.putExtra("keyWord", "Something/can be also a int,boolea,...")
         */
-        AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         context.startService(serviceIntent);
 
     }
